@@ -1,0 +1,18 @@
+{
+  "Comment": "Create/Update a CNAME record for a standalone Deployment",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "kube-app.rippel.no",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "a5078eb5249f911e88b240234cbb6eb6-733063819.eu-central-1.elb.amazonaws.com"
+          }
+        ]
+      }
+    }
+  ]
+}
